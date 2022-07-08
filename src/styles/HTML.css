@@ -1,0 +1,59 @@
+.sectionCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.steperCont {
+    display: flex;
+}
+
+.steperActive {
+    background-color: #76b8a3;
+    width: 170px;
+    height: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.steper {
+    opacity: 0.5;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.question {
+    margin-top: 20px;
+}
+
+.cont {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.element {
+    margin-top: 5px;
+    color: #76b8a3;
+}
+
+.inputBtn {
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: #56b1b1;
+    color: blanchedalmond;
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.inputBtnDis {
+    opacity: 0.5;
+}
+
+
