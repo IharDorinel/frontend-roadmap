@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/frontend-roadmap/static/css/main.b2584497.css",
+    "main.js": "/frontend-roadmap/static/js/main.4d1ab090.js",
+    "index.html": "/frontend-roadmap/index.html",
+    "main.b2584497.css.map": "/frontend-roadmap/static/css/main.b2584497.css.map",
+    "main.4d1ab090.js.map": "/frontend-roadmap/static/js/main.4d1ab090.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2584497.css",
+    "static/js/main.4d1ab090.js"
+  ]
+}
