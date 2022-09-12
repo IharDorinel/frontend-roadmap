@@ -1,8 +1,7 @@
 import './App.css';
-import HTMLReactHookForm from "./HTML";
-import HTMLFormik from "./HTMLFormik";
+import HTMLReactHookForm from "./HTML/index";
+import HTMLFormik from "./HTMLFormik/index";
 import '../src/styles/HTML.css';
-import {useEffect, useState} from "react";
 
 
 function App() {
