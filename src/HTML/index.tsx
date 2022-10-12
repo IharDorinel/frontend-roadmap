@@ -45,6 +45,7 @@ function HTMLReactHookForm () {
                                             required: 'Поле обязательно к заполнению!'
                                         })}
                                         type="checkbox"
+                                        data-testid = "hindi"
                                         name="language"
                                         value="Hindi"/>
                                     Hindi
@@ -56,6 +57,7 @@ function HTMLReactHookForm () {
                                     <input
                                         {...register("language")}
                                         type="checkbox"
+                                        data-testid = "farsi"
                                         name="language"
                                         value="Farsi"/>
                                     Farsi
@@ -66,6 +68,7 @@ function HTMLReactHookForm () {
                                     <input
                                         {...register("language")}
                                         type="checkbox"
+                                        data-testid = "afrikaans"
                                         name="language"
                                         value="Afrikaans"/>
                                     Afrikaans
@@ -77,6 +80,7 @@ function HTMLReactHookForm () {
                                     <input
                                         {...register("language")}
                                         type="checkbox"
+                                        data-testid = "nahuatl"
                                         name="language"
                                         value="Nahuatl"/>
                                     Nahuatl
@@ -88,6 +92,7 @@ function HTMLReactHookForm () {
                                     <input
                                         {...register("language")}
                                         type="checkbox"
+                                        data-testid = "maya"
                                         name="language"
                                         value="Maya"/>
                                     Maya
@@ -96,7 +101,7 @@ function HTMLReactHookForm () {
                         </div>
                         <div>{errors?.language && <p>{errors?.language?.message as ReactNode}</p>}</div>
 
-                        <input type="button" value="The next question" className="inputBtn" onClick={() => handleClick(2)}></input>
+                        <input type="button" data-testid="inputBtn" value="The next question" className="inputBtn" onClick={() => handleClick(2)}></input>
                     </>
                 )
             break;
@@ -113,6 +118,7 @@ function HTMLReactHookForm () {
                                             required: 'Обязательно'
                                         })}
                                         type="radio"
+                                        data-testid = "morocco"
                                         name="country"
                                         value="Morocco"/>
                                     Morocco
@@ -123,6 +129,7 @@ function HTMLReactHookForm () {
                                     <input
                                         {...register("country")}
                                         type="radio"
+                                        data-testid = "tunisia"
                                         name="country"
                                         value="Tunisia"/>
                                     Tunisia
@@ -133,6 +140,7 @@ function HTMLReactHookForm () {
                                     <input
                                         {...register("country")}
                                         type="radio"
+                                        data-testid = "ghana"
                                         name="country"
                                         value="Ghana"/>
                                     Ghana
@@ -143,6 +151,7 @@ function HTMLReactHookForm () {
                                     <input
                                         {...register("country")}
                                         type="radio"
+                                        data-testid = "nigeria"
                                         name="country"
                                         value="Nigeria"/>
                                     Nigeria
@@ -153,6 +162,7 @@ function HTMLReactHookForm () {
                                     <input
                                         {...register("country")}
                                         type="radio"
+                                        data-testid = "lesotho"
                                         name="country"
                                         value="Lesotho"/>
                                     Lesotho
@@ -161,7 +171,7 @@ function HTMLReactHookForm () {
                         </div>
 
                         <div>
-                            <input type="submit" className={`${!watch().language || !watch().country ? 'inputBtnDis inputBtn' : 'inputBtn'}`} disabled={!watch().language || !watch().country}/>
+                            <input type="submit" data-testid="submitBtn" className={`${!watch().language || !watch().country ? 'inputBtnDis inputBtn' : 'inputBtn'}`} disabled={!watch().language || !watch().country}/>
                         </div>
                     </>
                 )
@@ -172,7 +182,7 @@ function HTMLReactHookForm () {
 
 
   return (
-      <div>
+      <div data-testid="react-hook-form">
         <div className="sectionCont">
           <h3>React-hook-form</h3>
 
